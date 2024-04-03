@@ -9,3 +9,4 @@ The base dataset was constructed by downloading the annual salary disclosure rep
 These reports are constructed and managed via Observable's [Observable Framework](https://observablehq.com/framework/).
 
 ## Motivation
+Mostly, I wanted an excuse to learn how to use the Observable Framework.

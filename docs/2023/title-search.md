@@ -2,7 +2,7 @@
 title: Title Search | 2023
 ---
 
-## Title Search
+## 2023 Title Search
 
 Searching for a term will create a selection that affects statistics farther down the page. Individual rows can be selected by clicking or shift-clicking checkboxes in the table. Submitting a search will replace any existing selection. Nothing selected will display statistics for the entire data set.
 
@@ -29,7 +29,7 @@ const selection = view(Inputs.table(search, {
     CAMPUS: "Campus",
     APPOINTMENT_TITLE: "Title",
     APPOINTING_DEPT: "Department",
-    APPT_ANNUAL_FTR: "FTR ($)"
+    APPT_ANNUAL_FTR: "Base Salary ($)"
   },
   width: {
     CAMPUS: "10%",
@@ -59,7 +59,7 @@ const deviation = d3.deviation(selection, d => d.APPT_ANNUAL_FTR);
 //https://d3js.org/d3-array/summarize
 
 ```
-<div class="card grid grid-col-2">
+<div class="card">
 <div>
   <h3>Selection statistics</h3>
   <div>Mean (average): ${USDollar.format(mean)}</div>
@@ -78,13 +78,26 @@ const deviation = d3.deviation(selection, d => d.APPT_ANNUAL_FTR);
 
 ```js
 view(Plot.plot({
+  ariaLabel: "Selection Box Plot",
+  ariaDescription: "A box plot of selected titles.",
   title: "Selection Box Plot",
+  marginBottom: 140,
   y: {
     grid: true,
-    inset: 6
+    inset: 5,
+    label: "Base Salary ($)"
+  },
+  x: {
+    padding: 0.4,
+
+    tickRotate: -45,
+    label: "Title"
   },
   marks: [
     Plot.boxY(selection, {x: "APPOINTMENT_TITLE", y: "APPT_ANNUAL_FTR"})
   ]
 }))
 ```
+
+## Disclaimer
+Data is not necessarily complete. Chart is an approximation.
