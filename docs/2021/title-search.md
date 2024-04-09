@@ -1,13 +1,14 @@
 ---
-title: Title Search | 2023
+title: Title Search | 2021
 ---
 
-## 2023 Title Search
+
+## 2022 Title Search
 
 Searching for a term will create a selection that affects statistics farther down the page. Individual rows can be selected by clicking or shift-clicking checkboxes in the table. Submitting a search will replace any existing selection. Nothing selected will display statistics for the entire data set.
 
 ```js
-const salaries = await FileAttachment("../data/2023salaries.csv").csv({typed: true});
+const salaries = await FileAttachment("../data/2021salaries.csv").csv({typed: true});
 const searchInput = Inputs.search(salaries, {label: "Search the dataset", placeholder: "Search"});
 const search = view(searchInput);
 ```
@@ -99,8 +100,8 @@ const boxplot = view(Plot.plot({
 }));
 
 ```
-</div>
 
+</div>
 
 ## Disclaimer
 While this data originates from official sources, it must be treated as an approximation and can't be taken as direct fact.

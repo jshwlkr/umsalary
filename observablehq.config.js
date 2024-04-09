@@ -4,13 +4,14 @@ export default {
   title: "U-M Salary",
 
   pages: [
-    {
-      name: "2023",
-      pages: [
-        {name: "Title Search", path: "/2023/title-search"},
-      ]
-    },
+    
+    {name: "Year over year comparison", path: "/year-over-year"},
+    {name: "Campus comparison", path: "/campus"},
+    {name: "2023 Title Search", path: "/2023/title-search"},
+    {name: "2022 Title Search", path: "/2022/title-search"},
+    {name: "2021 Title Search", path: "/2021/title-search"},
     {name: "About", path: "/about"}
+
   ],
 
   // Some additional configuration options and their defaults:
