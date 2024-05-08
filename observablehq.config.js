@@ -33,9 +33,7 @@ export default {
         {name: "Title Search", path: "/2020/title-search"}
       ]
     },
-    {name: "Year over year comparison", path: "/year-over-year"},
-    {name: "About", path: "/about"}
-
+    {name: "Year over year comparison", path: "/year-over-year"}
   ],
 
   theme: "dashboard", // try "light", "dark", "slate", etc.

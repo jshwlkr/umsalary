@@ -107,4 +107,4 @@ const boxplot = view(Plot.plot({
 </div>
 
 ## Disclaimer
-While this data originates from official sources, it must be treated as an approximation and can't be taken as direct fact.
+While this data originates from official sources, it must be treated as an approximation.

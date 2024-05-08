@@ -2,7 +2,7 @@
 title: Campus comparison | 2023
 ---
 
-## 2023 Campus comparison
+## 2023 Campus Salaries Comparison
 
 ```js
 const salaries = await FileAttachment("/data/2023salaries.csv").csv({typed: true});
@@ -10,6 +10,7 @@ const salaries = await FileAttachment("/data/2023salaries.csv").csv({typed: true
 
 ```js
 view(Plot.plot({
+  marginLeft: 55,
   y: {
     grid: true,
     label: "Dollars"
